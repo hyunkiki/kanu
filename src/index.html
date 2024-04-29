@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:domain" content="사이트 명" />
+    <title>Kanu</title>
+    <link rel="stylesheet" href="/src/comm.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <style>
+      body {
+        font-family: "Pretendard";
+      }
+    </style>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script defer src="/src/comm.js"></script>
+  </head>
+  <body>
+    <header id="header" class="relative">
+      <!-- <div class="header_wrap w-full fixed top-0 left-0 z-100">
+        <div class="header_inner pt-6 mx-20"></div>
+      </div> -->
+    </header>
+    <div class="onepage_wrap">
+      <main id="main">
+        <section id="home" class="w-full h-screen">
+          <div
+            class="container relative flex justify-center items-center"
+          ></div>
+          <a href="#">
+            <img
+              class="logo_img fixed top-0 w-1/5 left-1/2 transform -translate-x-1/2 pt-5"
+              src="/image/kanu_logo.png"
+              alt="kanu_logo"
+            />
+          </a>
+          <video autoplay loop muted class="w-full h-full object-cover">
+            <source src="../kanu_intro.mp4" type="video/mp4" />
+          </video>
+        </section>
+        <section id="about" class="bg-black w-full h-screen"></section>
+        <section id="machine" class="bg-black w-full h-screen"></section>
+        <section id="capsule" class="bg-black w-full h-screen"></section>
+        <section id="recycle" class="bg-black w-full h-screen"></section>
+      </main>
+    </div>
+    <footer id="footer"></footer>
+  </body>
+</html>

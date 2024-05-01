@@ -34,51 +34,112 @@
       body {
         font-family: "Pretendard";
       }
-      .scroll_box span {
-        position: absolute;
-        right: 50%;
-        left: 50%;
-        bottom: 13%;
-        z-index: 100;
-        width: 30px;
-        height: 30px;
-        display: block;
-        border-right: 3px solid #fff;
-        border-bottom: 3px solid #fff;
-        transform: rotate(45deg);
-        margin: -10px;
-        animation: animate 2s infinite;
-      }
-      .scroll_box span:nth-child(2) {
-        animation-delay: -0.2s;
-      }
-      .scroll_box span:nth-child(3) {
-        animation-delay: -0.4s;
-      }
-      @keyframes animate {
-        0% {
-          opacity: 0;
-        }
-        50% {
-          opacity: 1;
-          transform: rotate(45deg) translate(20px, 20px);
-        }
-        100% {
-          opacity: 0;
-        }
-      }
       .scroll_down {
         position: absolute;
         top: 94%;
-        left: 45%;
+        right: 5.5%;
         width: 10%;
         color: #fff;
         font-weight: 600;
         text-align: center;
       }
+      .arrow {
+        width: 0;
+        height: 40px;
+        border: 2px solid #ffffff;
+        position: relative;
+        animation: scroll 1.5s infinite;
+        -webkit-animation: scroll 1.5s infinite;
+        position: absolute;
+        bottom: 8%;
+        right: 10.3%;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 100%;
+          left: -5px;
+          width: 1px;
+          height: 10px;
+          border-top: 10px solid #ffffff;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+        }
+      }
+      @keyframes scroll {
+        0% {
+          height: 40px;
+        }
+        30% {
+          height: 70px;
+        }
+        60% {
+          height: 40px;
+        }
+      }
+      #about .about_contents_01 {
+        position: relative;
+        z-index: 1;
+        background: #000;
+        transition: ease-out 0.4s;
+        padding: 100px 0;
+      }
+      #about .about_contents_01 .about_inner_box {
+        position: relative;
+        height: 100%;
+      }
+      #about .about_contents_01 .about_contents_list01 {
+        position: relative;
+        min-height: 100vh;
+        transition: opacity ease-in-out 0.4s;
+      }
+      #about .about_contents_01 .about_contents_list01 .about_txt_wr {
+        left: 50%;
+        top: 51%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+        width: 100%;
+      }
+      #about
+        .about_contents_01
+        .about_contents_list01
+        .about_txt_wr
+        .text1
+        .active {
+        left: 8%;
+        opacity: 1;
+        color: #fff;
+      }
+      #about
+        .about_contents_01
+        .about_contents_list01
+        .about_txt_wr
+        .text2
+        .active {
+        left: 8%;
+        opacity: 1;
+        color: #fff;
+      }
+      #about
+        .about_contents_01
+        .about_contents_list01
+        .about_txt_wr
+        .text3
+        .active {
+        left: 8%;
+        opacity: 1;
+        color: #fff;
+      }
+      #about .about_contents_01 .about_contents_list01 .about_txt_wr .text {
+        font-size: 160px;
+      }
     </style>
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script defer src="/src/comm.js"></script>
   </head>
   <body>
@@ -88,7 +149,7 @@
         <section id="home" class="w-full h-screen relative">
           <a href="#">
             <img
-              class="logo_img fixed top-0 w-10 left-1/2 transform -translate-x-1/2 pt-5"
+              class="logo_img fixed top-0 w-10 left-1/2 transform -translate-x-1/2 pt-5 z-9999"
               src="/image/kanu_logo.png"
               alt="kanu_logo"
             />
@@ -96,14 +157,24 @@
           <video autoplay loop muted class="w-full h-full object-cover">
             <source src="../kanu_intro.mp4" type="video/mp4" />
           </video>
-          <div class="scroll_box">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="scroll_down_wr">
+            <div class="arrow"></div>
             <div class="scroll_down">SCROLL DOWN</div>
           </div>
         </section>
-        <section id="about" class="bg-black w-full h-screen"></section>
+        <section id="about" class="bg-black w-full">
+          <div class="about_contents_box about_contents_01">
+            <div class="about_inner_box">
+              <div class="about_contents_list01 about_contents_list">
+                <div class="about_txt_wr">
+                  <div class="text text1 active">DO YOU</div>
+                  <div class="text text2 active">KNOW ABOUT</div>
+                  <div class="text text3 active">KANU?</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section id="machine" class="bg-black w-full h-screen"></section>
         <section id="capsule" class="bg-black w-full h-screen"></section>
         <section id="recycle" class="bg-black w-full h-screen"></section>

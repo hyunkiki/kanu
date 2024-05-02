@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./build/*.{html,js}"],
   theme: {
     extend: {
       width: {
@@ -23,6 +23,12 @@ module.exports = {
       fontSize: {
         10: "10vw",
         50: "50px",
+        150: "150px",
+        200: "200px",
+        180: "180px",
+      },
+      fontFamily: {
+        Righteous: ["Righteous", "sans-serif"],
       },
     },
   },

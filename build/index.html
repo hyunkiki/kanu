@@ -41,14 +41,14 @@
       }
       .arrow {
         width: 0;
-        height: 60px;
+        height: 90px;
         border: 2px solid #ffffff;
         position: relative;
         animation: scroll 1.5s infinite;
         -webkit-animation: scroll 1.5s infinite;
         position: absolute;
         bottom: 8%;
-        right: 9%;
+        right: 5%;
         &::after {
           content: "";
           display: block;
@@ -64,13 +64,13 @@
       }
       @keyframes scroll {
         0% {
-          height: 60px;
+          height: 90px;
         }
         30% {
-          height: 80px;
+          height: 70px;
         }
         60% {
-          height: 60px;
+          height: 90px;
         }
       }
       .about_wrap1 > .about_txt01 > div {
@@ -86,6 +86,18 @@
         -webkit-background-clip: text;
         /*   margin-bottom: -250px; */
         /*   outline: 6px dotted teal; */
+      }
+      .about_wrap2 .about2_cont_text_wrap1 .page_padding {
+        width: 100%;
+        padding: 4em;
+      }
+      .about_wrap2 .about2_cont_text_wrap1 .page_padding .about2_cont_heading {
+        max-width: 6em;
+      }
+      .about_wrap2 .about2_cont_text_wrap1 .page_padding .text_size_about2_tit {
+        font-size: 80px;
+        line-height: 0.8;
+        font-weight: 600;
       }
     </style>
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
@@ -114,7 +126,7 @@
             <div class="arrow"></div>
           </div>
         </section>
-        <section id="about" class="bg-black w-full">
+        <section id="about" class="bg-black w-full relative">
           <div class="about_wrap1 h-full">
             <p
               class="about_txt01 text-white text-180 text-center py-20 px-0 font-bold h-screen font-Righteous"
@@ -124,34 +136,88 @@
               KANU?
             </p>
           </div>
-          <div class="about_wrap2">
-            <div class="about_box2">
-              <div class="cont_wrap2">
-                <div class="cont_box img box">
-                  <div class="motion_img">
-                    <img
-                      src="../image/about_kanu1.png"
-                      alt="about_kanu1"
-                      class="img1"
-                    />
-                    <img
-                      src="../image/about_kanu2.png"
-                      alt="about_kanu2"
-                      class="img2"
-                    />
-                  </div>
-                  <div class="motion_img">
-                    <img
-                      src="../image/about_kanu3.png"
-                      alt="about_kanu3"
-                      class="img3"
-                    />
-                    <img
-                      src="../image/about_kanu4.png"
-                      alt="about_kanu4"
-                      class="img4"
-                    />
-                  </div>
+          <div class="about_wrap2 w-full h-full">
+            <div
+              class="about_cont_section01 flex justify-start items-stretch bg-black text-white"
+            >
+              <div class="about_cont_visual01 relative w-2/4">
+                <img
+                  src="/image/about_kanu1.png"
+                  alt="about_kanu1"
+                  class="about2_image1"
+                />
+              </div>
+              <div class="about2_cont_text_wrap1 w-2/4">
+                <div
+                  class="page_padding is_about2_cont flex min-h-screen justify-between flex-col items-start"
+                >
+                  <h1 class="about2_cont_heading text_size_about2_tit">
+                    Who We Are
+                  </h1>
+                  <p
+                    class="about2_cont_exp max-w-480 mt-0 mb-0 text-20 leading-2"
+                  >
+                    세상에서 가장 작은 카페, '카누' <br />
+                    우리들은 지난 10여년 동안 공간의 제약을 넘어<br />
+                    어디에서나 품질 좋은 카페 커픠의 깊고 풍부한 맛을 <br />
+                    간편하게 즐길 수 있습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="about_cont_section01 flex justify-start items-stretch bg-black text-white"
+            >
+              <div class="about_cont_visual01 relative w-2/4">
+                <img
+                  src="/image/about_kanu1.png"
+                  alt="about_kanu1"
+                  class="about2_image1"
+                />
+              </div>
+              <div class="about2_cont_text_wrap1 w-2/4">
+                <div
+                  class="page_padding is_about2_cont flex min-h-screen justify-between flex-col items-start"
+                >
+                  <h1 class="about2_cont_heading text_size_about2_tit">
+                    Who We Are
+                  </h1>
+                  <p
+                    class="about2_cont_exp max-w-480 mt-0 mb-0 text-20 leading-2"
+                  >
+                    세상에서 가장 작은 카페, '카누' <br />
+                    우리들은 지난 10여년 동안 공간의 제약을 넘어<br />
+                    어디에서나 품질 좋은 카페 커픠의 깊고 풍부한 맛을 <br />
+                    간편하게 즐길 수 있습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="about_cont_section01 flex justify-start items-stretch bg-black text-white"
+            >
+              <div class="about_cont_visual01 relative w-2/4">
+                <img
+                  src="/image/about_kanu1.png"
+                  alt="about_kanu1"
+                  class="about2_image1"
+                />
+              </div>
+              <div class="about2_cont_text_wrap1 w-2/4">
+                <div
+                  class="page_padding is_about2_cont flex min-h-screen justify-between flex-col items-start"
+                >
+                  <h1 class="about2_cont_heading text_size_about2_tit">
+                    Who We Are
+                  </h1>
+                  <p
+                    class="about2_cont_exp max-w-480 mt-0 mb-0 text-20 leading-2"
+                  >
+                    세상에서 가장 작은 카페, '카누' <br />
+                    우리들은 지난 10여년 동안 공간의 제약을 넘어<br />
+                    어디에서나 품질 좋은 카페 커픠의 깊고 풍부한 맛을 <br />
+                    간편하게 즐길 수 있습니다.
+                  </p>
                 </div>
               </div>
             </div>

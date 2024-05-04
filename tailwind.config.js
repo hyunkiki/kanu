@@ -22,6 +22,7 @@ module.exports = {
       },
       fontSize: {
         10: "10vw",
+        20: "20px",
         50: "50px",
         150: "150px",
         200: "200px",
@@ -29,6 +30,12 @@ module.exports = {
       },
       fontFamily: {
         Righteous: ["Righteous", "sans-serif"],
+      },
+      maxWidth: {
+        480: "480px",
+      },
+      lineHeight: {
+        2: "2",
       },
     },
   },

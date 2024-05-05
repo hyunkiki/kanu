@@ -655,10 +655,6 @@ video {
   justify-content: flex-start;
 }
 
-.justify-end {
-  justify-content: flex-end;
-}
-
 .justify-between {
   justify-content: space-between;
 }
@@ -695,6 +691,10 @@ video {
   text-align: center;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .font-Righteous {
   font-family: Righteous, sans-serif;
 }
@@ -707,12 +707,21 @@ video {
   font-size: 20px;
 }
 
+.text-25 {
+  font-size: 25px;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .leading-2 {
   line-height: 2;
+}
+
+.text-red-900 {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
 }
 
 .text-white {

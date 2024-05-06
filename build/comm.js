@@ -34,3 +34,8 @@ split.lines.forEach((target) => {
     },
   });
 });
+
+//about02
+gsap.registerPlugin(ScrollTrigger);
+
+/* about_sec02 이미지 변경 */

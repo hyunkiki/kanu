@@ -38,4 +38,19 @@ split.lines.forEach((target) => {
 //about02
 gsap.registerPlugin(ScrollTrigger);
 
-/* about_sec02 이미지 변경 */
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".about_cont_box2",
+      start: "top 100%",
+      end: "top 0%",
+      scrub: 1,
+      markers: true,
+    },
+  })
+  .fromTo(
+    ".about_cont_box2 .about_cont_visual01 .about2_image1",
+    { width: "100%", height: "100%", xPercent: -10, yPercent: -10 },
+    { width: "0%", height: "0%", ease: "none" },
+    1.5
+  );

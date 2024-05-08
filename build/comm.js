@@ -42,15 +42,15 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: ".about_cont_box2",
-      start: "top 100%",
-      end: "top 0%",
-      scrub: 1,
+      start: "top 10%",
+      end: "10% 30%",
+      scrub: 5,
       markers: true,
+      pin: true,
     },
   })
-  .fromTo(
+  .to(
     ".about_cont_box2 .about_cont_visual01 .about2_image1",
-    { width: "100%", height: "100%", xPercent: -10, yPercent: -10 },
-    { width: "0%", height: "0%", ease: "none" },
+    { x: -500, x: 500 },
     1.5
   );

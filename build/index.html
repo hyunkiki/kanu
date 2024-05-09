@@ -73,37 +73,16 @@
           height: 90px;
         }
       }
-      .about_wrap1 > .about_txt01 > div {
-        background: linear-gradient(
-          to right,
-          rgb(255, 255, 255) 50%,
-          rgb(37, 37, 37) 50%
-        );
-        background-size: 200% 100%;
-        background-position-x: 100%;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        /*   margin-bottom: -250px; */
-        /*   outline: 6px dotted teal; */
+      .inner {
+        margin: 0 100px;
       }
-      .about_wrap2 .about2_cont_text_wrap .page_padding {
-        width: 100%;
-        padding: 4em;
-      }
-      .about_wrap2 .about2_cont_text_wrap .page_padding .about2_cont_heading {
-        max-width: 6em;
-      }
-      .about_wrap2 .about2_cont_text_wrap .page_padding .text_size_about2_tit {
-        font-size: 64px;
-        line-height: 0.8;
-        font-weight: 600;
+      #about .about_text_wr {
+        padding: 80px 0;
       }
     </style>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script defer src="/build/comm.js"></script>
@@ -127,109 +106,16 @@
             <div class="arrow"></div>
           </div>
         </section>
-        <section id="about" class="bg-black w-full relative">
-          <div id="panner">
-            <div class="about_wrap1 h-full">
-              <p
-                class="about_txt01 text-white text-180 text-center py-20 px-0 font-bold h-screen font-Righteous"
-              >
-                DO YOU <br />
-                KNOW ABOUT <br />
-                KANU?
-              </p>
-            </div>
-            <div id="about_sec02" class="about_wrap2 w-full h-full relative">
-              <div
-                class="about_cont_box2 about_cont_section03 absolute top-0 w-full flex flex-row-reverse justify-start items-stretch bg-black text-white"
-              >
-                <div class="about_cont_visual03 relative w-2/4 overflow-hidden">
-                  <img
-                    src="/image/about_kanu3.png"
-                    alt="about_kanu3"
-                    class="about2_image3 absolute top-0 left-0 right-0 bottom-0 w-full h-full max-h-full object-cover"
-                  />
-                </div>
-                <div class="about2_cont_text_wrap w-2/4 opacity-0">
-                  <div
-                    class="page_padding is_about2_cont flex min-h-screen justify-between flex-col items-start"
-                  >
-                    <h1 class="about2_cont_heading text_size_about2_tit">
-                      Finally
-                    </h1>
-                    <p
-                      class="about2_cont_exp max-w-480 mt-0 mb-0 text-20 leading-2"
-                    >
-                      고품질의 아메리카노를 선호하는 <br />
-                      대한민국 커피 소비자들을 위해<br />
-                      최상의 커피 경험을 선사할 <br />
-                      완벽한 캡슐커피 시스템을 소개합니다.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="about_cont_box2 about_cont_section02 absolute top-0 w-full flex justify-start items-stretch bg-black text-white"
-              >
-                <div class="about_cont_visual02 relative w-2/4 overflow-hidden">
-                  <img
-                    src="/image/about_kanu2.png"
-                    alt="about_kanu2"
-                    class="about2_image2 absolute top-0 left-0 right-0 bottom-0 w-full h-full max-h-full object-cover"
-                  />
-                </div>
-                <div class="about2_cont_text_wrap w-2/4 opacity-0">
-                  <div
-                    class="page_padding is_about2_cont flex min-h-screen justify-between flex-col items-end"
-                  >
-                    <h1
-                      class="about2_cont_heading text_size_about2_tit text-red"
-                    >
-                      Kanu Barista
-                    </h1>
-                    <p
-                      class="about2_cont_exp max-w-480 mt-0 mb-0 text-20 leading-2 text-end"
-                    >
-                      동서식품은 50년 간의 커피에 대한 노하우를 바탕으로 <br />
-                      바리스타가 커피를 만드는 과정 그대로를<br />
-                      일상에서 즐길 수 있도록 <br />
-                      카누 바리스타를 선보이게 되었습니다.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="about_cont_box2 about_cont_section01 flex absolute w-full flex-row-reverse justify-start items-stretch bg-black text-white"
-              >
-                <div class="about_cont_visual01 relative w-2/4 overflow-hidden">
-                  <img
-                    src="/image/about_kanu1.png"
-                    alt="about_kanu1"
-                    class="about2_image1 absolute top-0 left-0 right-0 bottom-0 w-full h-full max-h-full object-cover"
-                  />
-                </div>
-                <div class="about2_cont_text_wrap w-2/4">
-                  <div
-                    class="page_padding is_about2_cont flex min-h-screen justify-between flex-col items-start"
-                  >
-                    <h1 class="about2_cont_heading text_size_about2_tit">
-                      Who We Are
-                    </h1>
-                    <p
-                      class="about2_cont_exp max-w-480 mt-0 mb-0 text-20 leading-2"
-                    >
-                      세상에서 가장 작은 카페,
-                      <span class="text-red text-25 font-bold">KANU</span>
-                      <br />
-                      우리들은 지난 10여년 동안 공간의 제약을 넘어<br />
-                      어디에서나 품질 좋은 카페 커픠의 깊고 풍부한 맛을 <br />
-                      간편하게 즐길 수 있습니다.
-                    </p>
-                  </div>
-                </div>
-              </div>
+        <section id="about" class="bg-black w-full h-full relative">
+          <div class="inner">
+            <div
+              class="about_text_wr text-white font-Righteous text-200 font-bold h-screen"
+            >
+              <div class="about_text txt1">DO YOU</div>
+              <div class="about_text txt2 text-right">KNOW ABOUT</div>
+              <div class="about_text txt3">KANU?</div>
             </div>
           </div>
-          <div class="about_wrap3"></div>
         </section>
         <section id="machine" class="bg-black w-full h-screen"></section>
         <section id="capsule" class="bg-black w-full h-screen"></section>

@@ -17,15 +17,19 @@ ScrollTrigger.create({
 
 //about01
 gsap.registerPlugin(ScrollTrigger);
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".about_wrap1",
+      start: "top 20%",
+      end: "90% 100%",
+      scrub: 1,
+      // markers: true,
+    },
+  })
+  .to(".about_text.txt1", { x: "50%", opacity: 1, duration: 3 }, 0.4)
+  .to(".about_text.txt3", { x: "50%", opacity: 1, duration: 3 }, 0.6)
+  .to(".about_text.txt2", { x: "-10%", opacity: 1, duration: 3 }, 0.8);
 
-gsap.timeline({
-  scrollTrigger: {
-    trigger: ".about_text_wr",
-    start: "top 20%",
-    end: "90% 100%",
-    scrub: 1,
-    markers: true,
-  },
-});
 //about02
 gsap.registerPlugin(ScrollTrigger);

@@ -76,8 +76,22 @@
       .inner {
         margin: 0 100px;
       }
-      #about .about_text_wr {
-        padding: 80px 0;
+      #about .about_wrap1 {
+        height: 120vh;
+      }
+      #about .about_wrap1 .about_text_wr1 {
+        left: 50%;
+        top: 0%;
+        position: absolute;
+        transform: translate(-50%, 0%);
+        z-index: 1;
+        width: 85%;
+        padding: 100px 0;
+      }
+      #about .about_wrap1 .about_text_wr1 .about_text {
+        font-weight: 900;
+        font-style: italic;
+        opacity: 0.3;
       }
     </style>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -106,14 +120,26 @@
             <div class="arrow"></div>
           </div>
         </section>
-        <section id="about" class="bg-black w-full h-full relative">
+        <section id="about" class="bg-black w-full relative">
           <div class="inner">
-            <div
-              class="about_text_wr text-white font-Righteous text-200 font-bold h-screen"
-            >
-              <div class="about_text txt1">DO YOU</div>
-              <div class="about_text txt2 text-right">KNOW ABOUT</div>
-              <div class="about_text txt3">KANU?</div>
+            <div class="about_wrap1">
+              <div class="about_text_wr1 text-white font-Righteous text-200">
+                <div class="about_text txt1 w-2/4">DO YOU</div>
+                <div class="about_text txt2 text-right w-4/5">KNOW ABOUT</div>
+                <div class="about_text txt3 w-2/4">KANU?</div>
+              </div>
+            </div>
+          </div>
+          <div class="about_wrap2">
+            <div class="about_bg_img w-full h-full">
+              <img
+                src="/image/about2_kanu.png"
+                alt="about2_kanu"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="about_text_wr2">
+              <div></div>
             </div>
           </div>
         </section>

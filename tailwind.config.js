@@ -26,9 +26,9 @@ module.exports = {
         25: "25px",
         50: "50px",
         150: "150px",
-        200: "200px",
         180: "180px",
         190: "190px",
+        200: "200px",
       },
       fontFamily: {
         Righteous: ["Righteous", "sans-serif"],

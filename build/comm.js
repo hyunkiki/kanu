@@ -27,9 +27,9 @@ gsap
       // markers: true,
     },
   })
-  .to(".about_text.txt1", { x: "50%", opacity: 1, duration: 3 }, 0.4)
-  .to(".about_text.txt3", { x: "50%", opacity: 1, duration: 3 }, 0.6)
-  .to(".about_text.txt2", { x: "-10%", opacity: 1, duration: 3 }, 0.8);
+  .to(".about_text.txt1", { x: "50%", color: "#fff", duration: 3 }, 0.4)
+  .to(".about_text.txt3", { x: "50%", duration: 3 }, 0.6)
+  .to(".about_text.txt2", { x: "-10%", color: "#fff", duration: 3 }, 0.8);
 
 //about02
 gsap.registerPlugin(ScrollTrigger);

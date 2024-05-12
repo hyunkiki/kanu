@@ -41,6 +41,11 @@ gsap
       end: "15% 80%",
       scrub: 1,
       markers: true,
+      pin: true,
     },
   })
-  .to(".about_wrap2::after", { opacity: 1 });
+  .to(".about_wrap2 .about_bg_img .black_img", {
+    y: "0",
+    duration: 3,
+    opacity: 1,
+  });

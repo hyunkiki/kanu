@@ -33,3 +33,14 @@ gsap
 
 //about02
 gsap.registerPlugin(ScrollTrigger);
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".about_wrap2",
+      start: "top 70%",
+      end: "15% 80%",
+      scrub: 1,
+      markers: true,
+    },
+  })
+  .to(".about_wrap2::after", { opacity: 1 });

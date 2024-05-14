@@ -36,16 +36,50 @@ gsap.registerPlugin(ScrollTrigger);
 gsap
   .timeline({
     scrollTrigger: {
-      trigger: ".about_wrap2",
+      trigger: ".about_wrap2 .about_box2",
       start: "top 70%",
-      end: "15% 80%",
+      end: "+=300%",
       scrub: 1,
       markers: true,
-      pin: true,
     },
   })
-  .to(".about_wrap2 .about_bg_img .black_img", {
-    y: "0",
-    duration: 3,
+  .to(" .about_wrap2 .about_box2 .about_bg_img .black_img", {
+    duration: 0.5,
     opacity: 1,
+  })
+  .to(".about_wrap2 .about_box2 .about2_txt01", 0.5, {
+    opacity: "1",
+    top: "50%",
+    delay: "0.1",
+  })
+  .to(".about_wrap2 .about_box2 .about2_txt01", 0.5, {
+    opacity: "0",
+    top: "40%",
+    delay: "0.2",
+  })
+  .to(".about_wrap2 .about_box2 .about2_txt02", 0.5, {
+    opacity: "1",
+    top: "50%",
+    delay: "0.1",
+  })
+  .to(".about_wrap2 .about_box2 .about2_txt02", 0.5, {
+    opacity: "0",
+    top: "40%",
+    delay: "0.2",
+  })
+  .to(".about_wrap2 .about_box2 .about2_txt03", 0.5, {
+    opacity: "1",
+    top: "50%",
   });
+gsap.to(".about_wrap2 .about_box2", {
+  scrollTrigger: {
+    trigger: ".about_wrap2 .about_box2",
+    start: "center 50%",
+    end: "300% 100%",
+    pin: true,
+    pinSpacing: false,
+    //		  markers:true,
+    anticipatePin: "0.3",
+    scrub: 0.1,
+  },
+});

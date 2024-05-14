@@ -11,6 +11,7 @@ module.exports = {
       height: {
         35: "35px",
         70: "70vh",
+        300: "300vh",
       },
       borderRadius: {
         25: "25%",
@@ -36,6 +37,9 @@ module.exports = {
       },
       maxWidth: {
         480: "480px",
+      },
+      maxHeight: {
+        300: "300vh",
       },
       lineHeight: {
         2: "2",

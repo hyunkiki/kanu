@@ -40,7 +40,7 @@ gsap
       start: "top 70%",
       end: "+=300%",
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   })
   .to(" .about_wrap2 .about_box2 .about_bg_img .black_img", {

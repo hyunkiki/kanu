@@ -590,16 +590,16 @@ video {
   display: block;
 }
 
+.h-300 {
+  height: 300vh;
+}
+
 .h-full {
   height: 100%;
 }
 
 .h-screen {
   height: 100vh;
-}
-
-.h-300 {
-  height: 300vh;
 }
 
 .max-h-300 {
@@ -644,6 +644,11 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -675,6 +680,10 @@ video {
 
 .text-50 {
   font-size: 50px;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .italic {

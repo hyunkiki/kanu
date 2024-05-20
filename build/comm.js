@@ -83,3 +83,6 @@ gsap.to(".about_wrap2 .about_box2", {
     scrub: 0.1,
   },
 });
+
+//kanu_product
+gsap.registerPlugin(ScrollTrigger);

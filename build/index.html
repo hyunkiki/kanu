@@ -115,6 +115,31 @@
         background-color: rgb(0, 0, 0, 0.8);
         opacity: 0;
       }
+      #about .about_wrap3 {
+        padding: 50px 0;
+      }
+      #about .about_wrap3 .marquee_wr1 span,
+      #about .about_wrap3 .marquee_wr2 span,
+      #about .about_wrap3 .marquee_wr3 span {
+        text-transform: uppercase;
+        transform: translateX(0);
+        white-space: nowrap;
+        animation: marquee 10s linear infinite;
+        font-weight: 900;
+        will-change: transform;
+      }
+      #about .about_wrap3 .marquee_wr2 span {
+        -webkit-text-stroke-color: white;
+        -webkit-text-stroke-width: 2px;
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
     </style>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
@@ -194,13 +219,38 @@
               </div>
             </div>
           </div>
-          <div class="about_wrap3 h-screen">
-            <h1 class="text-white">dadasd</h1>
+          <div class="about_wrap3">
+            <div
+              class="marquee_wr1 text-white text-180 flex items-center justify-start overflow-hidden"
+            >
+              <span>&nbsp;KANU&nbsp;KANU&nbsp;</span>
+              <span>&nbsp;KANU&nbsp;KANU&nbsp;</span>
+              <span>&nbsp;KANU&nbsp;KANU&nbsp;</span>
+              <span>&nbsp;KANU&nbsp;KANU&nbsp;</span>
+              <span>&nbsp;KANU&nbsp;KANU&nbsp;</span>
+            </div>
+            <div
+              class="marquee_wr2 text-black text-180 flex items-center justify-start overflow-hidden"
+            >
+              <span>&nbsp;BARISTA&nbsp;BARISTA&nbsp;</span>
+              <span>&nbsp;BARISTA&nbsp;BARISTA&nbsp;</span>
+              <span>&nbsp;BARISTA&nbsp;BARISTA&nbsp;</span>
+              <span>&nbsp;BARISTA&nbsp;BARISTA&nbsp;</span>
+              <span>&nbsp;BARISTA&nbsp;BARISTA&nbsp;</span>
+            </div>
+            <div
+              class="marquee_wr3 text-white text-180 flex items-center justify-start overflow-hidden"
+            >
+              <span>&nbsp;MACHINE&nbsp;MACHINE&nbsp;</span>
+              <span>&nbsp;MACHINE&nbsp;MACHINE&nbsp;</span>
+              <span>&nbsp;MACHINE&nbsp;MACHINE&nbsp;</span>
+              <span>&nbsp;MACHINE&nbsp;MACHINE&nbsp;</span>
+              <span>&nbsp;MACHINE&nbsp;MACHINE&nbsp;</span>
+            </div>
           </div>
         </section>
-        <section id="machine" class="bg-black w-full h-screen"></section>
-        <section id="capsule" class="bg-black w-full h-screen"></section>
-        <section id="recycle" class="bg-black w-full h-screen"></section>
+        <section id="kanu_product" class="bg-black w-full h-screen"></section>
+        <section id="contact" class="bg-black w-full h-screen"></section>
       </main>
     </div>
     <footer id="footer"></footer>

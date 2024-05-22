@@ -38,6 +38,7 @@
     <style>
       body {
         font-family: "Pretendard";
+        overflow-x: hidden;
       }
       .arrow {
         width: 0;
@@ -140,6 +141,20 @@
           transform: translateX(-100%);
         }
       }
+      #kanu_product .horizontal_wr .horizontal_box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-width: 100vw;
+        height: 100vh;
+        font-size: 50px;
+        font-weight: bold;
+        color: #fff;
+        background: #000;
+      }
+      #kanu_product .horizontal_wr .horizontal_box &__large {
+        width: 100vw;
+      }
     </style>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
@@ -223,11 +238,11 @@
             <div
               class="marquee_wr1 text-white text-180 flex items-center justify-start overflow-hidden"
             >
-              <span>&nbsp;KANU&nbsp;KANU&nbsp;</span>
-              <span>&nbsp;KANU&nbsp;KANU&nbsp;</span>
-              <span>&nbsp;KANU&nbsp;KANU&nbsp;</span>
-              <span>&nbsp;KANU&nbsp;KANU&nbsp;</span>
-              <span>&nbsp;KANU&nbsp;KANU&nbsp;</span>
+              <span>&nbsp;KANU&nbsp;KANU&nbsp;KANU&nbsp;</span>
+              <span>&nbsp;KANU&nbsp;KANU&nbsp;KANU&nbsp;</span>
+              <span>&nbsp;KANU&nbsp;KANU&nbsp;KANU&nbsp;</span>
+              <span>&nbsp;KANU&nbsp;KANU&nbsp;KANU&nbsp;</span>
+              <span>&nbsp;KANU&nbsp;KANU&nbsp;KANU&nbsp;</span>
             </div>
             <div
               class="marquee_wr2 text-black text-180 flex items-center justify-start overflow-hidden"
@@ -249,8 +264,28 @@
             </div>
           </div>
         </section>
-        <section id="kanu_product" class="bg-black w-full h-screen"></section>
-        <section id="contact" class="bg-black w-full h-screen"></section>
+        <section id="kanu_product" class="w-full h-full">
+          <div class="horizontal_wr flex flex-nowrap">
+            <section class="horizontal_box horizontal_box__large">
+              <p>section A</p>
+            </section>
+            <section class="horizontal_box horizontal_box__large">
+              <p>section B</p>
+            </section>
+            <section class="horizontal_box">
+              <p>section c</p>
+            </section>
+            <section class="horizontal_box horizontal_box__large">
+              <p>section D</p>
+            </section>
+            <section class="horizontal_box horizontal_box__large">
+              <p>section E</p>
+            </section>
+          </div>
+        </section>
+        <section class="contact w-screen h-screen bg-black text-white">
+          안녕하세요
+        </section>
       </main>
     </div>
     <footer id="footer"></footer>

@@ -8,6 +8,7 @@ module.exports = {
         15: "15%",
         3: "3px",
         300: "300vw",
+        40: "40%",
       },
       height: {
         35: "35px",
@@ -48,6 +49,10 @@ module.exports = {
       },
       colors: {
         red: "red",
+      },
+      top: {
+        10: "10%",
+        15: "15%",
       },
     },
   },

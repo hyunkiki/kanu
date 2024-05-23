@@ -143,8 +143,6 @@
       }
       #kanu_product .horizontal_wr .horizontal_box {
         position: relative;
-        display: flex;
-        align-items: center;
         min-width: 100vw;
         height: 100vh;
         font-size: 50px;
@@ -266,21 +264,46 @@
         </section>
         <section id="kanu_product" class="w-full h-full">
           <div class="horizontal_wr flex flex-nowrap">
-            <section class="horizontal_box horizontal_box__large">
-              <p>section A</p>
-            </section>
-            <section class="horizontal_box horizontal_box__large">
+            <div
+              class="horizontal_box horizontal_box__large horizon_box1 relative"
+            >
+              <div class="inner">
+                <div class="thumb_img1 w-auto absolute top-20">
+                  <img
+                    src="/image/kanu_barista_logo.png"
+                    alt="kanu_barista_logo"
+                  />
+                </div>
+                <div class="fixed_exp absolute top-1/4">
+                  <h2 class="text-50 text-white font-bold">
+                    카누 바리스타가 되다
+                  </h2>
+                  <p class="text-30 text-white font-light">
+                    바리스타가 커피를 만드는 과정을 <br />
+                    새로 구연한 이상적인 캡슐 커피 시스템입니다.
+                  </p>
+                </div>
+                <div class="thumb_img2 w-40 absolute -bottom-2/4 right-0">
+                  <img
+                    src="/image/kanu_barista1.png"
+                    alt="kanu_barista1"
+                    class="w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="horizontal_box horizontal_box__large">
               <p>section B</p>
-            </section>
-            <section class="horizontal_box">
+            </div>
+            <div class="horizontal_box">
               <p>section c</p>
-            </section>
-            <section class="horizontal_box horizontal_box__large">
+            </div>
+            <div class="horizontal_box horizontal_box__large">
               <p>section D</p>
-            </section>
-            <section class="horizontal_box horizontal_box__large">
+            </div>
+            <div class="horizontal_box horizontal_box__large">
               <p>section E</p>
-            </section>
+            </div>
           </div>
         </section>
         <section class="contact w-screen h-screen bg-black text-white">

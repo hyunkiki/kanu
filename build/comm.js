@@ -111,3 +111,21 @@ gsap.to(sections, {
     invalidateOnRefresh: true,
   },
 }); //수평 이동 애니메이션 설정
+
+//horizon1
+gsap.registerPlugin(ScrollTrigger);
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".horizontal_wr .horizon_box1",
+      start: "top 20%",
+      end: "90% 100%",
+      scrub: 1,
+      markers: true,
+    },
+  })
+  .to(".horizontal_wr .horizon_box1 .thumb_img2", {
+    duration: 5,
+    y: "-70%",
+    delay: 3,
+  });

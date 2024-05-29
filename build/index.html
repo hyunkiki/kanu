@@ -22,6 +22,7 @@
       content="http://www.mysite.com/article/article1.html"
     />
     <meta name="twitter:domain" content="사이트 명" />
+    <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon" />
     <title>KANU</title>
     <link rel="stylesheet" href="./css/comm.css" />
     <link
@@ -29,6 +30,10 @@
       as="style"
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Righteous&display=swap"
@@ -274,7 +279,11 @@
                     alt="kanu_barista_logo"
                   />
                 </div>
-                <div class="fixed_exp absolute top-1/4">
+                <div
+                  class="fixed_exp absolute top-1/4"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
                   <h2 class="text-50 text-white font-bold">
                     카누 바리스타가 되다
                   </h2>
@@ -312,5 +321,11 @@
       </main>
     </div>
     <footer id="footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+      });
+    </script>
   </body>
 </html>

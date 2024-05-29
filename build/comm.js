@@ -125,7 +125,7 @@ gsap
     },
   })
   .to(".horizontal_wr .horizon_box1 .thumb_img2", {
-    duration: 5,
+    duration: 15,
     y: "-70%",
-    delay: 3,
+    delay: 6,
   });

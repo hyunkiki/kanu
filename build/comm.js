@@ -121,11 +121,11 @@ gsap
       start: "top 20%",
       end: "90% 100%",
       scrub: 1,
-      markers: true,
+      markers: false,
     },
   })
   .to(".horizontal_wr .horizon_box1 .thumb_img2", {
-    duration: 15,
-    y: "-70%",
-    delay: 6,
+    duration: 5,
+    y: "-80%",
+    delay: 3,
   });

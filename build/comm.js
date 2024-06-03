@@ -112,20 +112,29 @@ gsap.to(sections, {
   },
 }); //수평 이동 애니메이션 설정
 
-//horizon1
+//horizontal
 gsap.registerPlugin(ScrollTrigger);
+
 gsap
   .timeline({
     scrollTrigger: {
-      trigger: ".horizontal_wr .horizon_box1",
-      start: "top 20%",
-      end: "90% 100%",
+      trigger: ".horizontal_wr",
+      end: `+=10000`,
       scrub: 1,
-      markers: false,
+      pin: true,
+      markers: true,
     },
   })
-  .to(".horizontal_wr .horizon_box1 .thumb_img2", {
-    duration: 5,
-    y: "-80%",
-    delay: 3,
+  .to(".horizontal_wr .horizon_box1 .thumb_img2", 2, {
+    opacity: "1",
+    right: "5%",
+  })
+  .to(".horizontal_wr .horizon_box1 .text_box1", 2, {
+    opacity: "1",
+    left: "5%",
+  })
+  .to(".horizontal_wr .horizon_box1 .text_box2", 3, {
+    opacity: "1",
+    left: "5%",
+    delay: 2,
   });

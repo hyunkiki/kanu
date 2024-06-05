@@ -146,17 +146,9 @@
           transform: translateX(-100%);
         }
       }
-      #kanu_product .horizontal_wr .horizontal_box {
+      #kanu_product .horizon_wrap .horizon_box {
         position: relative;
         min-width: 100vw;
-        height: 100vh;
-        font-size: 50px;
-        font-weight: bold;
-        color: #fff;
-        background: #000;
-      }
-      #kanu_product .horizontal_wr .horizontal_box &__large {
-        width: 100vw;
       }
     </style>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -267,7 +259,28 @@
             </div>
           </div>
         </section>
-        <section id="kanu_product" class="w-full h-full"></section>
+        <section id="kanu_product" class="w-full h-full">
+          <div class="horizon_wrap flex">
+            <section
+              class="horizon_box SectionA bg-black h-screen w-screen"
+            ></section>
+            <section
+              class="horizon_box SectionB bg-neutral-900 h-screen w-screen"
+            >
+              <p>section B</p>
+            </section>
+            <section
+              class="horizon_box SectionC bg-neutral-800 h-screen w-screen"
+            >
+              <p>section c</p>
+            </section>
+            <section
+              class="horizon_box SectionD bg-neutral-700 h-screen w-screen"
+            >
+              <p>section D</p>
+            </section>
+          </div>
+        </section>
         <section class="contact w-screen h-screen bg-black text-white">
           안녕하세요
         </section>

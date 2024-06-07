@@ -1,4 +1,4 @@
-//home
+//HOME
 ScrollTrigger.create({
   animation: gsap.from(".logo_img", {
     y: "50vh",
@@ -82,7 +82,7 @@ gsap.to(".about_wrap2 .about_box2", {
     anticipatePin: "0.3",
     scrub: 0.1,
   },
-});
+}); //ABOUT
 
 //kanu_product
 gsap.registerPlugin(ScrollTrigger);

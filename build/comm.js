@@ -88,29 +88,51 @@ gsap.to(".about_wrap2 .about_box2", {
 gsap.registerPlugin(ScrollTrigger);
 
 // Sections
-const sections = gsap.utils.toArray(".horizon_box");
+let sections = gsap.utils.toArray(".horizon_box");
 
-let maxWidth = 0;
-
-const getMaxWidth = () => {
-  maxWidth = 0;
-  sections.forEach((section) => {
-    maxWidth += section.offsetWidth;
-  });
-};
-
-getMaxWidth();
-ScrollTrigger.addEventListener("refreshInit", getMaxWidth);
-
-gsap.to(sections, {
-  x: () => `-${maxWidth - window.innerWidth}`,
-  ease: "none",
+let scrollTween = gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none", // <-- IMPORTANT!
   scrollTrigger: {
     trigger: ".horizon_wrap",
     pin: true,
-    scrub: true,
-    // markers: true,
-    end: () => `+=${maxWidth}`,
-    invalidateOnRefresh: true,
+    scrub: 0.1,
+    //snap: directionalSnap(1 / (sections.length - 1)),
+    end: "+=3000",
   },
 });
+
+//sectionA
+const SectionA = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".SectionA",
+    start: "top 10%",
+    end: "center 70%",
+    scrub: 1,
+    markers: true,
+  },
+});
+SectionA.to(".SectionA .kanu_barista_uban_wr", {
+  duration: 3,
+  x: "13%",
+  opacity: 1,
+});
+SectionA.to(".SectionA .thumb_uban_img", {
+  duration: 5,
+  x: "-13%",
+  opacity: 1,
+});
+
+//sectionB
+const SectionB = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".SectionB",
+    start: "top 10%",
+    end: "center 70%",
+    scrub: 1,
+    containerAnimation: scrollTween,
+    // markers: true,
+  },
+});
+
+// SectionB.to(".SectionB .thumb_logo_img", { duration: 3, x: "50%" });

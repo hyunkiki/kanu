@@ -109,22 +109,32 @@ const SectionA = gsap.timeline({
     start: "top 10%",
     end: "center 70%",
     scrub: 1,
-    markers: true,
+    // markers: true,
   },
 });
+
+SectionA.to(".SectionA .thumb_logo_img", {
+  duration: 3,
+  opacity: 1,
+  ease: "power1.inOut",
+});
+
 SectionA.to(".SectionA .kanu_barista_uban_wr1", {
   duration: 3,
   x: "13%",
+  ease: "power1.inOut",
   opacity: 1,
 });
 SectionA.to(".SectionA .kanu_barista_uban_wr2", {
   duration: 3,
-  x: "11.5%",
+  x: "12%",
+  ease: "power1.inOut",
   opacity: 1,
 });
 SectionA.to(".SectionA .thumb_uban_img", {
-  duration: 5,
+  duration: 3,
   x: "-13%",
+  ease: "power1.inOut",
   opacity: 1,
 });
 
@@ -136,8 +146,31 @@ const SectionB = gsap.timeline({
     end: "center 70%",
     scrub: 1,
     containerAnimation: scrollTween,
-    // markers: true,
+    markers: true,
   },
 });
+SectionB.to(".SectionB .thumb_logo_img", {
+  duration: 3,
+  opacity: 1,
+  ease: "power1.inOut",
+});
 
-// SectionB.to(".SectionB .thumb_logo_img", { duration: 3, x: "50%" });
+SectionB.to(".SectionB .kanu_barista_breez_wr1", {
+  duration: 3,
+  x: "13%",
+  ease: "power1.inOut",
+  opacity: 1,
+});
+SectionB.to(".SectionB .kanu_barista_breez_wr2", {
+  duration: 3,
+  x: "12%",
+  ease: "power1.inOut",
+  opacity: 1,
+});
+
+SectionB.to(".SectionB .thumb_breez_img", {
+  duration: 3,
+  x: "-13%",
+  ease: "power1.inOut",
+  opacity: 1,
+});

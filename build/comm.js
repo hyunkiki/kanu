@@ -112,9 +112,14 @@ const SectionA = gsap.timeline({
     markers: true,
   },
 });
-SectionA.to(".SectionA .kanu_barista_uban_wr", {
+SectionA.to(".SectionA .kanu_barista_uban_wr1", {
   duration: 3,
   x: "13%",
+  opacity: 1,
+});
+SectionA.to(".SectionA .kanu_barista_uban_wr2", {
+  duration: 3,
+  x: "11.5%",
   opacity: 1,
 });
 SectionA.to(".SectionA .thumb_uban_img", {

@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       width: {
+        5: "5%",
         10: "10%",
         15: "15%",
         15.5: "15.5%",
@@ -34,6 +35,7 @@ module.exports = {
       },
       fontSize: {
         10: "10vw",
+        10: "10px",
         20: "20px",
         25: "25px",
         30: "30px",
@@ -75,6 +77,10 @@ module.exports = {
       },
       bottom: {
         10: "10%",
+      },
+      inset: {
+        400: "400px", // 여기서 400은 400px를 나타냅니다
+        40: "40%",
       },
     },
   },

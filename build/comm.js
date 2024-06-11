@@ -176,5 +176,41 @@ SectionB.to(".SectionB .thumb_breez_img", {
 });
 
 //sectionC
+const SectionC = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".SectionC",
+    start: "top 10%",
+    end: "center 70%",
+    scrub: 1,
+    containerAnimation: scrollTween,
+    // markers: true,
+  },
+});
+
+SectionC.to(".SectionC .thumb_logo_img", {
+  duration: 3,
+  opacity: 1,
+  ease: "none",
+});
+
+SectionC.to(".SectionC .kanu_capsule_wr1", {
+  duration: 3,
+  x: "22.5%",
+  ease: "none",
+  opacity: 1,
+});
+
+SectionC.to(".SectionC .kanu_capsule_wr2", {
+  duration: 3,
+  x: "-13%",
+  ease: "none",
+  opacity: 1,
+});
+
+SectionC.to(".SectionC .introduce_box", {
+  duration: 3,
+  ease: "none",
+  opacity: 1,
+});
 
 //sectionD

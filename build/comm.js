@@ -214,3 +214,37 @@ SectionC.to(".SectionC .introduce_box", {
 });
 
 //sectionD
+const SectionD = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".SectionD",
+    start: "top 10%",
+    end: "center 70%",
+    scrub: 1,
+    containerAnimation: scrollTween,
+    // markers: true,
+  },
+});
+
+SectionD.to(".SectionD .thumb_logo_img", {
+  duration: 3,
+  opacity: 1,
+  ease: "none",
+});
+
+SectionD.to(".SectionD .kanu_dolce_capsule_wr1", {
+  duration: 3,
+  x: "19%",
+  ease: "none",
+  opacity: 1,
+});
+SectionD.to(".SectionD .kanu_dolce_capsule_wr2 .kanu_dolce_capsule_box", {
+  duration: 3,
+  x: "-9.5%",
+  ease: "none",
+  opacity: 1,
+});
+SectionD.to(".SectionD .introduce_box", {
+  duration: 3,
+  ease: "none",
+  opacity: 1,
+});

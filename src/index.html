@@ -125,18 +125,22 @@
         padding: 50px 0;
       }
       #about .about_wrap3 .marquee_wr1 span,
-      #about .about_wrap3 .marquee_wr2 span,
       #about .about_wrap3 .marquee_wr3 span {
         text-transform: uppercase;
         transform: translateX(0);
         white-space: nowrap;
-        animation: marquee 10s linear infinite;
         font-weight: 900;
         will-change: transform;
+        animation: marquee 10s linear infinite;
       }
       #about .about_wrap3 .marquee_wr2 span {
         -webkit-text-stroke-color: white;
         -webkit-text-stroke-width: 2px;
+        transform: translateX(0);
+        white-space: nowrap;
+        font-weight: 900;
+        will-change: transform;
+        animation: reverse_marquee 10s linear infinite;
       }
       @keyframes marquee {
         0% {
@@ -144,6 +148,14 @@
         }
         100% {
           transform: translateX(-100%);
+        }
+      }
+      @keyframes reverse_marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(100%);
         }
       }
       #kanu_product .horizon_wrap .horizon_box {
@@ -178,17 +190,42 @@
     <script defer src="./comm.js"></script>
   </head>
   <body>
-    <header id="header" class="relative"></header>
+    <header id="header" class="relative">
+      <ul
+        class="header_lst_wr fixed flex w-full z-100 justify-around items-center text-white h-100"
+      >
+        <li class="header_lst">
+          <a href="#home" class="header_link text-20 font-bold hover:text-red"
+            >HOME</a
+          >
+        </li>
+        <li class="header_lst">
+          <a href="#about" class="header_link text-20 font-bold hover:text-red"
+            >ABOUT</a
+          >
+        </li>
+        <li class="header_lst">
+          <a href="#">
+            <img src="./image/kanu_logo.png" alt="Portfolio_logo"
+          /></a>
+        </li>
+        <li class="header_lst">
+          <a
+            href="#kanu_product"
+            class="header_link text-20 font-bold hover:text-red"
+            >PRODUCT</a
+          >
+        </li>
+        <li class="header_lst">
+          <a href="#footer" class="header_link text-20 font-bold hover:text-red"
+            >CONTACT</a
+          >
+        </li>
+      </ul>
+    </header>
     <div class="onepage_wrap">
       <main id="main">
         <section id="home" class="w-full h-screen relative">
-          <a href="#">
-            <img
-              class="logo_img fixed top-0 w-10 left-1/2 transform -translate-x-1/2 pt-5 z-9999"
-              src="./image/kanu_logo.png"
-              alt="kanu_logo"
-            />
-          </a>
           <video autoplay loop muted class="w-full h-full object-cover">
             <source src="../kanu_intro.mp4" type="video/mp4" />
           </video>
@@ -200,7 +237,7 @@
           <div class="inner">
             <div class="about_wrap1">
               <div class="about_text_wr1 font-Righteous text-200">
-                <div class="about_text txt1 w-2/4 text-zinc-600">DO YOU</div>
+                <div class="about_text txt1 text-zinc-600">DO YOU</div>
                 <div class="about_text txt2 text-right w-10/12- text-zinc-950">
                   KNOW ABOUT
                 </div>
@@ -261,7 +298,7 @@
               <span>&nbsp;KANU&nbsp;KANU&nbsp;KANU&nbsp;</span>
             </div>
             <div
-              class="marquee_wr2 text-black text-180 flex items-center justify-start overflow-hidden"
+              class="marquee_wr2 text-black text-180 flex items-center justify-end overflow-hidden"
             >
               <span>&nbsp;BARISTA&nbsp;BARISTA&nbsp;</span>
               <span>&nbsp;BARISTA&nbsp;BARISTA&nbsp;</span>
@@ -286,7 +323,7 @@
               class="horizon_box SectionA bg-black h-screen w-screen relative"
             >
               <div
-                class="thumb_logo_img w-15 absolute top-10 left-24 opacity-0"
+                class="thumb_logo_img w-15 absolute top-70 left-24 opacity-0"
               >
                 <img
                   src="./image/kanu_barista_logo.png"
@@ -333,10 +370,10 @@
               </div>
             </section>
             <section
-              class="horizon_box SectionB bg-neutral-900 h-screen w-screen relative"
+              class="horizon_box SectionB bg-black h-screen w-screen relative"
             >
               <div
-                class="thumb_logo_img w-15 absolute top-10 left-24 opacity-0"
+                class="thumb_logo_img w-15 absolute top-70 left-24 opacity-0"
               >
                 <img
                   src="./image/kanu_barista_logo.png"
@@ -378,10 +415,10 @@
               </div>
             </section>
             <section
-              class="horizon_box SectionC bg-neutral-800 h-screen w-screen relative"
+              class="horizon_box SectionC bg-black h-screen w-screen relative"
             >
               <div
-                class="thumb_logo_img w-15 absolute top-10 left-24 opacity-0"
+                class="thumb_logo_img w-15 absolute top-70 left-24 opacity-0"
               >
                 <img
                   src="./image/capsule_logo_240_white.png"
@@ -575,10 +612,10 @@
               </ul>
             </section>
             <section
-              class="horizon_box SectionD bg-neutral-700 h-screen w-screen relative"
+              class="horizon_box SectionD bg-black h-screen w-screen relative"
             >
               <div
-                class="thumb_logo_img w-15 absolute top-10 left-24 opacity-0"
+                class="thumb_logo_img w-15 absolute top-70 left-24 opacity-0"
               >
                 <img
                   src="./image/capsule_logo_240_white.png"

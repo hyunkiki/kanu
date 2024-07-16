@@ -1,12 +1,12 @@
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+//   anchor.addEventListener("click", function (e) {
+//     e.preventDefault();
 
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-}); //header에 메뉴의 a태그를 누르면 해당영역으로 부드럽게 이동하기
+//     document.querySelector(this.getAttribute("href")).scrollIntoView({
+//       behavior: "smooth",
+//     });
+//   });
+// }); //header에 메뉴의 a태그를 누르면 해당영역으로 부드럽게 이동하기
 
 //HOME
 // ScrollTrigger.create({
@@ -38,7 +38,7 @@ gsap
     },
   })
   .to(".about_text.txt1", { x: "30%", color: "#fff", duration: 3 }, 0.4)
-  .to(".about_text.txt3", { x: "50%", duration: 3 }, 0.6)
+  .to(".about_text.txt3", { x: "55%", duration: 3 }, 0.6)
   .to(".about_text.txt2", { x: "-10%", color: "#fff", duration: 3 }, 0.8);
 
 //about02
